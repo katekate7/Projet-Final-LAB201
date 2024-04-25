@@ -1,44 +1,49 @@
 import React, { useState } from 'react';
 import { auth } from '../firebaseConfig'; // Now 'auth' is exported
-import { signInWithEmailAndPassword, createUserWithEmailAndPassword } from 'firebase/auth';
+import { useNavigate } from 'react-router-dom';
+import { signInWithEmailAndPassword } from 'firebase/auth';
 import '../css/Login.css';
 
 const LoginScreen = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [isLoading, setIsLoading] = useState(false);
+    const [error, setError] = useState(null);
+    const navigate = useNavigate();
 
     const signIn = async () => {
         setIsLoading(true);
         try {
             const response = await signInWithEmailAndPassword(auth, email, password);
             console.log('Sign in successful:', response);
+            navigate('/');
             // Handle successful sign in
         } catch (error) {
             console.error('Error signing in:', error);
+            setError(error.message)
             // Handle sign in error
         } finally {
             setIsLoading(false);
         }
     };
 
-    const signUp = async () => {
-        setIsLoading(true);
-        try {
-            const response = await createUserWithEmailAndPassword(auth, email, password);
-            console.log('Sign up successful:', response);
-            // Handle successful sign up
-        } catch (error) {
-            console.error('Error signing up:', error);
-            // Handle sign up error
-        } finally {
-            setIsLoading(false);
-        }
-    };
+    // const signUp = async () => {
+    //     setIsLoading(true);
+    //     try {
+    //         const response = await createUserWithEmailAndPassword(auth, email, password);
+    //         console.log('Sign up successful:', response);
+    //         // Handle successful sign up
+    //     } catch (error) {
+    //         console.error('Error signing up:', error);
+    //         // Handle sign up error
+    //     } finally {
+    //         setIsLoading(false);
+    //     }
+    // };
 
     return (
         <div className="container">
-            <h1>Welcome to WebDoc</h1>
+            <h1>Welcome to Admin Page</h1>
             <input
                 type="text"
                 placeholder="Email"
@@ -56,7 +61,8 @@ const LoginScreen = () => {
             ) : (
                 <div className="buttonContainer">
                     <button onClick={signIn}>LOG IN</button>
-                    <button onClick={signUp}>SIGN UP</button>
+                    {error && <p>Invalid credentials</p>}
+                    {/* <button onClick={signUp}>SIGN UP</button> */}
                 </div>
             )}
         </div>

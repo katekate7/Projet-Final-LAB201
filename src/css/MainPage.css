@@ -1,16 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
 .main-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
+    font-family: 'Poppins', sans-serif;
+}
   
-  .menu-nav {
+.menu-nav {
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
-  }
+}
   
-  .nav-button {
+.nav-button {
     margin: 0 10px;
     padding: 10px 20px;
     font-size: 16px;
@@ -20,10 +27,51 @@
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
-  }
-  
-  .nav-button:hover {
+}
+.nav-button:hover {
     background-color: #2980b9;
-  }
+}
 
+.first-conteiner {
+    background-image: url('../photo/fight1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
   
+.theme-present {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 999;
+    color: white;
+    font-weight: bold; /* Corrected */
+    font-style: italic; /* Corrected */
+    font-size: 3vh;
+    font-family: 'Poppins', sans-serif; /* Removed other font-family declarations */
+}
+
+.second-conteiner {
+    background-image: linear-gradient(to bottom, #141414, #2A2A2A);
+    height: 100vh;
+    width: 100%;
+}
+
+.big-letters {
+  height: 30vh;
+  width: 100%;
+}
+
+.big-letters p {
+  font-size: 3000%;
+  color: white;
+  font-family: 'Poppins', sans-serif; 
+  font-weight: bold; /* Corrected */
+  text-align: center;
+  margin-top: 0%;
+  padding-top: 0%;
+}

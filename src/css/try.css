@@ -1,46 +1,43 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:800,200');
-
-:root {
-  --font-size: 280px;
-  --bg-color: #1e2134;
-  --text-color: #30442a;
-}
-
-body {
-  font-family: 'Montserrat', sans-serif;
-  overflow-x: hidden;
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  background: var(--bg-color);
-  line-height: 1.7;
-  color: #fff;
-  transform: skewY(-5deg);
-}
-
-.bg-text-container {
-  transform: translateX(-50%);
-  left: 50%;
-  position: absolute;
-  z-index: -999;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
 
 @keyframes text-scrolling {
   0% { transform: translate3d(-100%, 0, 0); }
   100% { transform: translate3d(0%, 0, 0); }
 }
 
+:root {
+  --font-size: 10vw; /* Adjust the font size based on viewport width */
+  --bg-color: #1e2134;
+  --text-color: #ffffff;
+}
+
+.bg-text-container {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 .animate-text {
   animation: text-scrolling 20s linear infinite;
   will-change: transform;
-  display: block;
-  position: relative;
   white-space: nowrap;
+  position: absolute;
+  margin-bottom: 20%; /* Position the first line at the top */
+  font-family: 'Poppins', sans-serif; /* Apply Poppins font */
+  font-weight: 800; /* Apply ExtraBold (800) weight */
 }
 
 .animate-text.left {
   animation-direction: reverse;
+  position: absolute;
+  margin-top: 30%; /* Position the second line at the bottom */
+  font-family: 'Poppins', sans-serif, bold; /* Apply Poppins font */
+  font-weight: 800; /* Apply ExtraBold (800) weight */
 }
 
 span {
@@ -50,29 +47,43 @@ span {
   text-transform: uppercase;
   display: inline-block;
   line-height: 0.75;
-  min-width: auto;
-  font-weight: 800;
 }
 
-.container {
-  padding: 30px;
-  max-width: 1000px;
-  width: 100%; 
-  margin: 0 auto;
+.content-between {
+  margin: 0 20px; /* Adjust margin to create space between the text animation and content */
+  display: flex;
+  align-items: center; /* Vertically center the content */
 }
 
-.col {
-  max-width: 600px;
-  margin: 0;
+.menu-nav {
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
 
-h1 {
-  font-size: 90px;
-  margin: 0;
+.centered-text {
+  text-align: center;
+  margin-top: 20vh;
 }
 
-p {
-  font-size: 18px;
-  font-weight: 200;
-  margin: 0;
+.theme-present {
+  text-align: center;
+  margin-top: 10vh;
+}
+
+.main-container {
+  position: relative;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .bg-text-container {
+    flex-direction: column;
+    top: 30%;
+    transform: translateY(-30%);
+  }
+  .centered-text,
+  .theme-present {
+    margin-top: 10vh;
+  }
 }
