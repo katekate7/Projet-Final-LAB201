@@ -1,0 +1,15 @@
+.Competition{
+    font-size: 6vh;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500; /* Semi-bold */
+    color: white;
+}
+.Form{
+    margin-left: 3%;
+    margin-top: 0%;
+    padding-top: 0%;
+    font-size: 3vh;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200; /* Semi-bold */
+    color: white;
+}

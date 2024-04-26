@@ -21,16 +21,21 @@ body {
     margin: 0 10px;
     padding: 10px 20px;
     font-size: 16px;
-    background-color: #3498db;
+    background-color: #272727;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
 }
-.nav-button:hover {
-    background-color: #2980b9;
-}
+.nav-button {
+    transition: all 0.3s ease-in-out; /* Add transition for smooth animation */
+  }
+  
+  .nav-button:hover {
+    transform: scale(1.1); /* Scale up the button on hover */
+  }
+  
 
 .first-conteiner {
     background-image: url('../photo/fight1.jpg');
@@ -59,19 +64,107 @@ body {
     background-image: linear-gradient(to bottom, #141414, #2A2A2A);
     height: 100vh;
     width: 100%;
+    position: relative;
 }
 
+
 .big-letters {
-  height: 30vh;
-  width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center; /* Horizontally center the text */
+    align-items: flex-start; /* Align the text to the top */
+    width: 100%;
 }
 
 .big-letters p {
-  font-size: 3000%;
+  font-size: 3800%;
   color: white;
   font-family: 'Poppins', sans-serif; 
   font-weight: bold; /* Corrected */
   text-align: center;
-  margin-top: 0%;
-  padding-top: 0%;
+  margin: 0;
+  padding: 0;
+  line-height: 0.75;
+}
+
+.three-fighters-photo{
+    height: 90%;
+    background-image: url('../photo/3fighetrs.png');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    width: 50%;
+}
+
+.text{
+    width: 50%;
+    height: 30% ;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 550; /* Semi-bold */
+    margin-left: 11%;
+    margin-top: 3%;
+    font-size: larger;
+}
+.third-container{
+    background-image: url('../photo/blackfight.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.fourth-container {
+    background-color: #1A1A1A;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    font-size: 6vh;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 550; /* Semi-bold */
+    text-align: center;
+    color: white;
+}
+.fifth-container{
+    background-color: #1A1A1A;
+    height: 90vh;
+    width: 100%;
+    position: relative;
+}
+.distipl-text{
+    font-size: 6vh;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500; /* Semi-bold */
+    margin-left: 2%;
+    margin-top: 3%;
+    color: white;
+}
+.six-conteiner{
+    background-color: #1A1A1A;
+    height: 60vh;
+    width: 100%;
+    position: relative;
+}
+.français{
+    font-size: 6vh;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500; /* Semi-bold */
+    margin-left: 2%;
+    margin-top: 0%;
+    padding-top: 0%;
+    color: white;
+}
+.français p {
+    margin-top: 0%;
+    padding-top: 0%;
+}
+
+.seven-conteiner{
+    background-color: #1A1A1A;
+    height: 30vh;
+    width: 100%;
+    position: relative;
 }

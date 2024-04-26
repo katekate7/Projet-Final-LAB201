@@ -27,20 +27,6 @@ const LoginScreen = () => {
         }
     };
 
-    // const signUp = async () => {
-    //     setIsLoading(true);
-    //     try {
-    //         const response = await createUserWithEmailAndPassword(auth, email, password);
-    //         console.log('Sign up successful:', response);
-    //         // Handle successful sign up
-    //     } catch (error) {
-    //         console.error('Error signing up:', error);
-    //         // Handle sign up error
-    //     } finally {
-    //         setIsLoading(false);
-    //     }
-    // };
-
     return (
         <div className="container">
             <h1>Welcome to Admin Page</h1>

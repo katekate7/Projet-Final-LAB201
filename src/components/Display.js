@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { getDatabase, set, ref, onValue } from "firebase/database";
 import { auth } from "../firebaseConfig";
 import { saveTextToFirebase } from '../firebaseConfig';
+import '../css/Display.css';
 
 const Display = () => {
     const [savedData, setSavedData] = useState("");
@@ -89,8 +90,8 @@ const Display = () => {
                 </div>
             ) : (
                 <div>
-                    <div>
-                      <h2>Information:</h2>
+                    <div className="Form">
+                      <h2 className="Competition">Lieu des compétitions d'escrime suivantes:</h2>
                       <p>{savedData}</p>
                       {loggedIn && <button onClick={handleEdit}>Edit</button>}
                       {loggedIn && <button onClick={handleClear}>Clear</button>}

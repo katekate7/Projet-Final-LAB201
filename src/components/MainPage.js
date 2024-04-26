@@ -2,10 +2,17 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { auth } from '../firebaseConfig';
 import { Poppins } from 'google-fonts'; // Import the Poppins font
+
 import Display from './Display';
+import Video from './Video';
+import SimpleCarousel from './SimpleCarousel';
+import image1 from '../photo/photo1.jpg';
+import image2 from '../photo/photo2.jpg';
+import image3 from '../photo/photo3.jpg';
 
 import '../css/MainPage.css';
 import '../css/try.css';
+import OpacityBox from './OpacityBox';
 
 
 function MainPage() {
@@ -33,6 +40,8 @@ function MainPage() {
         return () => unsubscribe();
       }, []);
 
+   const images = [image1, image2, image3]; // Add more images if needed
+
       const handleLogout = async () => {
         try {
           await auth.signOut(); // Sign out the user
@@ -42,6 +51,7 @@ function MainPage() {
         } catch (error) {
           console.error("Error logging out:", error);
         }
+     
       };
 
   return (
@@ -69,34 +79,59 @@ function MainPage() {
       </nav>
  
           <div className="theme-present" style={{ fontFamily: 'Poppins, sans-serif' }}>
-               <p> Plongez au cœur de l’escrime: Ses 3 disciplines 
+               <p> Plongez au cœur de l’escrime: Ses 3 disciplines
               <br/>au sein des JO</p>
           </div>
       
       </div>
+
       <div className="second-conteiner">
         <div className="big-letters">
           <p> F F E </p>
         </div>
-      </div>
 
-      {/* <div className="App">
+      <div className="three-fighters-photo">
+        </div>
 
-      <h1>ESCRIME</h1>
-      <img src="path/to/fencing-competition-image.jpg" alt="Fencing Competition" />
-      <p>Plongez au cœur de l'escrime : ses 3 disciplines au sein des JO</p>
-      <p>Kempa Escrime</p>
-
-      <div className="container">
-        <div className="col">
-          <h1>Heading</h1>
-          <p>Lobortis primis, ultrices? Earum mollis! Ad consequuntur laboriosam ut possimus, minus expedita, adipisci fermentum, officia maecenas voluptatibus eiusmod, laboriosam maiores aspernatur ad egestas tenetur tempora.</p>
+        <div className="text">
+          <p>La Fédération Française d'Escrime (FFE) gère et <br/> 
+          promeut l'escrime en France, organisant des <br/>
+          compétitions nationales et soutenant les escrimeurs <br/> 
+          dans les arènes internationales. Elle joue un rôle essentiel dans <br/> 
+          la formation des athlètes et des entraîneurs, contribuant à la<br/>
+           renommée mondiale de l'escrime française.
+         </p>
         </div>
       </div>
-      
-    </div> */}
+
+      <div className="third-container">
+      </div>
+
+      <div className="fourth-container">   
+        <p> LE SPORT LE PLUS MEDAILLÉ DES JEUX <br/> OLYMPIQUES </p>
+        <Video/>
+      </div>
+
+      <div className="fifth-container"> 
+          <div className="distipl-text">
+              <p>3 disciplines </p>
+          </div>
+              <div className="Caroussel">
+              <SimpleCarousel images={images} />
+            </div>
+      </div>
+
+      <div className="six-conteiner">
+        <div className="français">
+          <p>Nos français aux JO </p>
+        </div>
+        <OpacityBox/>
+      </div>
     
-    <Display/>
+    <div className="seven-conteiner">
+        <Display/>
+    </div>
+    
 
     </div>
   );

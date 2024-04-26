@@ -1,17 +1,23 @@
 /* Login.css */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
 
+body{
+  background-color: black;
+}
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
   font-family: 'Poppins', sans-serif; /* Apply Poppins font */
+  background-color: black;
+  height: 100%;
 }
 
 .container h1 {
   margin-bottom: 5%;
   margin-top: 7%;
   font-size: 3vw;
+  color: white;
 }
 
 .container input[type="text"],
@@ -26,7 +32,7 @@
 
 .container input[type="text"]:focus,
 .container input[type="password"]:focus {
-  border-color: #4f46e5;
+  border-color: rgb(255, 255, 255);
 }
 
 .buttonContainer {
@@ -39,8 +45,8 @@
   margin-right: 0.5rem;
   border: none;
   border-radius: 0.375rem;
-  background-color: #667eea;
-  color: #ffffff;
+  background-color: #FFD700;
+  color: #000000;
   font-weight: 600;
   cursor: pointer;
   outline: none;
@@ -51,5 +57,5 @@
 }
 
 .buttonContainer button:hover {
-  background-color: #5a67d8;
+  background-color: #D4AF37;
 }

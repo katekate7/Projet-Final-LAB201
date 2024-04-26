@@ -1,0 +1,14 @@
+.Caroussel {
+  height: 10%;
+  width: 100%; /* Adjust as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 12%;
+}
+.Caroussel .carousel-image {
+  max-width: 50%; /* Adjust as needed */
+  max-height: 50%; /* Adjust as needed */
+  display: block;
+  margin: auto;
+}
