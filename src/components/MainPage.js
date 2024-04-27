@@ -6,6 +6,8 @@ import { Poppins } from 'google-fonts'; // Import the Poppins font
 import Display from './Display';
 import Video from './Video';
 import SimpleCarousel from './SimpleCarousel';
+import SecondContainer from './SecondContainer';
+
 import image1 from '../photo/photo1.jpg';
 import image2 from '../photo/photo2.jpg';
 import image3 from '../photo/photo3.jpg';
@@ -84,8 +86,8 @@ function MainPage() {
           </div>
       
       </div>
-
-      <div className="second-conteiner">
+<SecondContainer/>
+      {/* <div className="second-conteiner">
         <div className="big-letters">
           <p> F F E </p>
         </div>
@@ -102,7 +104,7 @@ function MainPage() {
            renommée mondiale de l'escrime française.
          </p>
         </div>
-      </div>
+      </div> */}
 
       <div className="third-container">
       </div>

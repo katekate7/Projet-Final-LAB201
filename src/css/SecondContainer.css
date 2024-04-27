@@ -1,0 +1,15 @@
+.second-container {
+    position: relative;
+  }
+  
+  .second-container .big-letters {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .second-container .three-fighters-photo,
+  .second-container .text {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
