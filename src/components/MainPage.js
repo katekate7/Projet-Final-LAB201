@@ -7,6 +7,8 @@ import Display from './Display';
 import Video from './Video';
 import SimpleCarousel from './SimpleCarousel';
 import SecondContainer from './SecondContainer';
+import OpacityBox from './OpacityBox';
+import Music from './MusicComponent';
 
 import image1 from '../photo/photo1.jpg';
 import image2 from '../photo/photo2.jpg';
@@ -14,7 +16,7 @@ import image3 from '../photo/photo3.jpg';
 
 import '../css/MainPage.css';
 import '../css/try.css';
-import OpacityBox from './OpacityBox';
+
 
 
 function MainPage() {
@@ -60,6 +62,8 @@ function MainPage() {
     <div className="main-container">
       <div className="first-conteiner">
 
+      <Music/>
+
       <div className="bg-text-container">
         <div className="animate-text">
           <span>ESCRIME&nbsp;</span>
@@ -73,6 +77,7 @@ function MainPage() {
           <span>ESCRIME&nbsp;</span>
         </div>
       </div>
+
 
       <nav className="menu-nav">
 

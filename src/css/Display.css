@@ -13,3 +13,14 @@
     font-weight: 200; /* Semi-bold */
     color: white;
 }
+.Edit{
+    padding: 10px 20px;
+    margin: 1%;
+    font-size: 16px;
+    background-color: #272727;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}

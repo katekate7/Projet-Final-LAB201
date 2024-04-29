@@ -27,6 +27,10 @@ const LoginScreen = () => {
         }
     };
 
+    const back = () => {
+        navigate('/');
+    }
+
     return (
         <div className="container">
             <h1>Welcome to Admin Page</h1>
@@ -46,8 +50,10 @@ const LoginScreen = () => {
                 <div>Loading...</div>
             ) : (
                 <div className="buttonContainer">
+
+                    <button onClick={back}>BACK</button>
                     <button onClick={signIn}>LOG IN</button>
-                    {error && <p>Invalid credentials</p>}
+                    {error && <p style={{color: "white"}}>Invalid credentials</p>}
                     {/* <button onClick={signUp}>SIGN UP</button> */}
                 </div>
             )}

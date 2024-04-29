@@ -93,8 +93,8 @@ const Display = () => {
                     <div className="Form">
                       <h2 className="Competition">Lieu des compétitions d'escrime suivantes:</h2>
                       <p>{savedData}</p>
-                      {loggedIn && <button onClick={handleEdit}>Edit</button>}
-                      {loggedIn && <button onClick={handleClear}>Clear</button>}
+                      {loggedIn && <button className="Edit" onClick={handleEdit}>Edit</button>}
+                      {loggedIn && <button className="Edit" onClick={handleClear}>Clear</button>}
                     </div>
                     
                 </div>
