@@ -6,7 +6,7 @@
 }
 
 :root {
-  --font-size: 10vw; /* Adjust the font size based on viewport width */
+  --font-size: 10rem; /* Adjust the font size based on viewport width */
   --bg-color: #1e2134;
   --text-color: #ffffff;
 }
