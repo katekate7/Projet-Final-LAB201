@@ -1,27 +1,28 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import { auth } from '../firebaseConfig';
-import { Poppins } from 'google-fonts'; // Import the Poppins font
+import { Link } from 'react-router-dom'; // Importing Link for navigation
+import { auth } from '../firebaseConfig'; // Importing Firebase authentication instance
 
-import Display from './Display';
+import Display from './Display'; // Importing Display component
 import Video from './Video';
 import SimpleCarousel from './SimpleCarousel';
 import SecondContainer from './SecondContainer';
 import OpacityBox from './OpacityBox';
 
-import image1 from '../photo/fleuret.jpg';
+import image1 from '../photo/fleuret.jpg'; // Importing images
 import image2 from '../photo/lepee.jpg';
 import image3 from '../photo/sabre.jpg';
 import firstPhoto from '../photo/fourman.png'; // Import first photo
 import secondPhoto from '../photo/flymen.png'; // Import second photo
 
-import '../css/MainPage.css';
+import '../css/MainPage.css'; // Importing CSS styles
 import '../css/try.css';
 
 
 
 function MainPage() {
-    const [loggedIn, setLoggedIn] = useState(false);
+    const [loggedIn, setLoggedIn] = useState(false); // State variable to track user login status
+
+    // useEffect to adjust width of animation text elements
 
     useEffect(() => {
         const parent = document.querySelectorAll('.animate-text');
@@ -30,6 +31,7 @@ function MainPage() {
         }
       }, []);
 
+       // useEffect to check user authentication status
       useEffect(() => {
         const unsubscribe = auth.onAuthStateChanged((user) => {
           if (user) {
@@ -50,9 +52,6 @@ function MainPage() {
       const handleLogout = async () => {
         try {
           await auth.signOut(); // Sign out the user
-          // Optionally, you can navigate the user to another page after logout
-          // For example, you can redirect the user to the login page
-          // window.location.href = '/login'; // Redirect to the login page
         } catch (error) {
           console.error("Error logging out:", error);
         }
@@ -60,11 +59,13 @@ function MainPage() {
       };
 
   return (
+
+    //Creation different parts of the site
     <div className="main-container">
       <div className="first-conteiner">
 
       <div className="bg-text-container">
-        <div className="animate-text">
+         <div className="animate-text">  {/*animated text */} 
           <span>ESCRIME&nbsp;</span>
           <span>ESCRIME&nbsp;</span>
         </div>
@@ -79,8 +80,8 @@ function MainPage() {
 
 
       <nav className="menu-nav">
-
-        <Link to="/LoginScreen" className="nav-button">CONNEXION</Link>
+ 
+        <Link to="/LoginScreen" className="nav-button">CONNEXION</Link>  {/*button connexion */} 
         {loggedIn && <button className="nav-button" onClick={handleLogout}>DÉCONNEXION</button>}
       </nav>
  
@@ -90,9 +91,9 @@ function MainPage() {
           </div>
       
       </div>
-<SecondContainer/>
+<SecondContainer/> {/*animated*/} 
 
-      <div className="third-container">
+      <div className="third-container"> {/*photo */} 
       </div>
 
       <div className="four-part-container">
@@ -128,12 +129,12 @@ function MainPage() {
       </div>
       </div>
 
-      <div className="fourth-container">   
+      <div className="fourth-container">    {/*video*/} 
         <p> L’ESCRIME À TRAVERS LES ÉPOQUES</p>
         <Video/>
       </div>
 
-      <div className="fifth-container"> 
+      <div className="fifth-container">  {/*carrousel */} 
           <div className="distipl-text">
               <p>3 DISCIPLINES </p>
           </div>
@@ -142,7 +143,7 @@ function MainPage() {
             </div>
       </div>
 
-      <div className="six-conteiner">
+      <div className="six-conteiner"> {/*animated */} 
         <div className="français">
           <p>NOS FRANÇAIS AUX JO  </p>
         </div>
@@ -153,7 +154,7 @@ function MainPage() {
         <Display/>
     </div>
     
-    <div className="lastconteiner">
+    <div className="lastconteiner"> {/*Input */} 
     <div className="bigtext">
           <p>Envie de pratiquer l’escrime ?  </p>
         </div>
@@ -167,7 +168,7 @@ function MainPage() {
     </div>
 
     <footer>
-      <div className="horizontal-column">
+      <div className="horizontal-column"> {/*Footer */} 
         <p>©ClaqClaq</p>
         <p>Conditions générales</p>
         <p>Charte de confidentalié</p>

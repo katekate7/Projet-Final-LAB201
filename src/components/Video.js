@@ -6,20 +6,21 @@ import video1 from "../photo/Video.mp4";
 class Video extends Component {
   constructor(props) {
     super(props);
-    this.videoRef = React.createRef();
+    this.videoRef = React.createRef(); // Create a reference to the video element
     this.state = {
-      isPlaying: false
+      isPlaying: false // Initialize state for play/pause functionality
     };
   }
 
+    // Function to handle play/pause toggle
   handlePlayPause = () => {
-    const video = this.videoRef.current;
+    const video = this.videoRef.current; // Get reference to the video element
     if (this.state.isPlaying) {
-      video.pause();
+      video.pause(); // Pause the video if it's playing
     } else {
-      video.play();
+      video.play();  // Play the video if it's paused
     }
-    this.setState({ isPlaying: !this.state.isPlaying });
+    this.setState({ isPlaying: !this.state.isPlaying }); // Toggle play/pause state
   };
 
   render() {

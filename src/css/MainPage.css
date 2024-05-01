@@ -18,7 +18,7 @@ body {
 }
   
 .nav-button {
-    margin: 1% 2%;
+    margin: 1% 2%;  /* BUTTON CONNEXION */
     padding: 10px 20px;
     font-size: 16px;
     font-family: 'Poppins', sans-serif; 
@@ -42,7 +42,7 @@ body {
   
 
 .first-conteiner {
-    background-image: url('../photo/fight1.jpg');
+    background-image: url('../photo/fight1.jpg'); /* FIRST FOTO */
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -58,14 +58,14 @@ body {
     text-align: center;
     z-index: 999;
     color: white;
-    font-weight: bold; /* Corrected */
-    font-style: italic; /* Corrected */
+    font-weight: bold; 
+    font-style: italic; 
     font-size: 3vh;
     font-family: 'Poppins', sans-serif; /* Removed other font-family declarations */
 }
 
 .second-conteiner {
-    background-image: linear-gradient(to bottom, #141414, #2A2A2A);
+    background-image: linear-gradient(to bottom, #141414, #2A2A2A);    /* ANIMATED PART */
     height: 100vh;
     width: 100%;
     position: relative;
@@ -84,7 +84,7 @@ body {
   font-size: 3800%;
   color: white;
   font-family: 'Poppins', sans-serif; 
-  font-weight: bold; /* Corrected */
+  font-weight: bold; 
   text-align: center;
   margin: 0;
   padding: 0;
@@ -113,7 +113,7 @@ body {
     font-size: larger;
 }
 .third-container{
-    background-image: url('../photo/blackfight.png');
+    background-image: url('../photo/blackfight.png');   /*  FOTO PART */
     background-size: cover;
     background-position: center;
     height: 90vh;
@@ -122,7 +122,7 @@ body {
 }
 
 .fourth-container {
-  background-color: #1A1A1A;
+  background-color: #1A1A1A;     /* VIDEO PART */
   height: 70vh;
   width: 100%;
   position: relative;
@@ -134,7 +134,7 @@ body {
   margin: 0%;
 }
 .fifth-container{
-    background-color: #1A1A1A;
+    background-color: #1A1A1A; /* 3 DISCIPLINES */
     height: 100vh;
     width: 100%;
     position: relative;
@@ -150,7 +150,7 @@ body {
     color: white;
 }
 .six-conteiner{
-    background-color: #1A1A1A;
+    background-color: #1A1A1A; /*  OPACITY ANIMATION */
     height: 60vh;
     width: 100%;
     position: relative;
@@ -173,7 +173,7 @@ body {
     width: 100%;
     position: relative;
 }
-.four-part-container {
+.four-part-container {    /*  INFORMATION PART */
     display: flex;
     background-color: #1A1A1A;
     height: 80vh;
@@ -193,7 +193,7 @@ body {
     font-family: 'Poppins', sans-serif;
     text-align: center;
     color: white;
-    margin-left: -30%; /* To remove any default margins */
+    margin-left: -30%; 
     padding: 0%;
     text-align: left;
   }
@@ -206,13 +206,8 @@ body {
     max-width: 100%;
     height: auto;
   }
-  .line {
-    width: 50px; /* Adjust the width of the line */
-    height: 2px; /* Adjust the height of the line */
-    background-color: white; /* Adjust the color of the line */
-  }
   .lastconteiner{
-    background-color: #1A1A1A;
+    background-color: #1A1A1A; /*  INPUT PART */
     height: 30vh;
     width: 100%;
   }
@@ -245,7 +240,7 @@ body {
 
 .horizontal-column {
     display: flex;
-    justify-content: space-around; /* Adjust alignment as needed */
+    justify-content: space-around; /* Adjust alignment as needed */   /*  ADDITION INFO */
     height: 3vh;
     width: 100%;
     background-color: #1A1A1A;
@@ -259,7 +254,7 @@ body {
     text-decoration: underline;
   }
   
-  .Caroussel {
+  .Caroussel {            /*  CAROUSSEL PART */
     height: 20%;
     width: 90%; /* Adjust as needed */
     display: flex;
@@ -279,7 +274,7 @@ body {
 
 
 
-  .Competition{
+  .Competition{     /*  BUTTONS PART */
     font-size: 6vh;
     font-family: 'Poppins', sans-serif;
     font-weight: 500; /* Semi-bold */
@@ -311,7 +306,7 @@ body {
   display: flex;
   justify-content: space-between;
   margin: 0;
-  padding: 0;
+  padding: 0;                    /*  OPACITY PART */
   height: 100vh;
   width: 180vh;
 }
@@ -368,7 +363,7 @@ body {
 
 
 .second-container {
-  position: relative;
+  position: relative;           /*  ANIMATED PART */
 }
 
 .second-container .big-letters {
