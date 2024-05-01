@@ -25,7 +25,11 @@ class Video extends Component {
   render() {
     return (
       <div style={{ position: 'relative' }}>
-        <video ref={this.videoRef} src={video1} />
+        <video ref={this.videoRef} src={video1} style={{
+          width:'100vh',
+          height:'50vh',
+          margin: '0%'
+        }} />
         <button
           onClick={this.handlePlayPause}
           style={{
@@ -51,3 +55,4 @@ class Video extends Component {
 }
 
 export default Video;
+

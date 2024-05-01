@@ -2,7 +2,7 @@ import React from 'react';
 import imgAvatar1 from '../photo/romain.png'; // Import the first image file
 import imgAvatar2 from '../photo/pauline.png'; // Import the second image file
 import imgAvatar3 from '../photo/maxime.png'; // Import the third image file
-import '../css/OpacityBox.css'; // Import CSS file for OpacityBox styles
+import '../css/MainPage.css'; // Import CSS file for OpacityBox styles
 
 class OpacityBox extends React.Component {
   render() {

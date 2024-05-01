@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import '../css/SecondContainer.css';
+import '../css/MainPage.css';
 
 const SecondContainer = () => {
   useEffect(() => {
@@ -43,12 +43,14 @@ const SecondContainer = () => {
       </div>
       <div className="three-fighters-photo"></div>
       <div className="text">
-        <p>La Fédération Française d'Escrime (FFE) gère et <br/> 
-        promeut l'escrime en France, organisant des <br/>
-        compétitions nationales et soutenant les escrimeurs <br/> 
-        dans les arènes internationales. Elle joue un rôle essentiel dans <br/> 
-        la formation des athlètes et des entraîneurs, contribuant à la<br/>
-        renommée mondiale de l'escrime française.
+        <p>La Fédération Française d'Escrime (FFE) <br/> 
+        gère et promeut l'escrime en France, <br/>
+        organisant des compétitions nationales et<br/> 
+        soutenant les escrimeurs dans les arènes<br/> 
+        internationales. Elle joue un rôle essentiel<br/>
+        dans la formation des athlètes et des <br/>
+        entraîneurs, contribuant à la renommée <br/>
+        mondiale de l'escrime française.
         </p>
       </div>
     </div>

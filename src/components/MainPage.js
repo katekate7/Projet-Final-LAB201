@@ -8,11 +8,12 @@ import Video from './Video';
 import SimpleCarousel from './SimpleCarousel';
 import SecondContainer from './SecondContainer';
 import OpacityBox from './OpacityBox';
-import Music from './MusicComponent';
 
-import image1 from '../photo/photo1.jpg';
-import image2 from '../photo/photo2.jpg';
-import image3 from '../photo/photo3.jpg';
+import image1 from '../photo/fleuret.jpg';
+import image2 from '../photo/lepee.jpg';
+import image3 from '../photo/sabre.jpg';
+import firstPhoto from '../photo/fourman.png'; // Import first photo
+import secondPhoto from '../photo/flymen.png'; // Import second photo
 
 import '../css/MainPage.css';
 import '../css/try.css';
@@ -62,8 +63,6 @@ function MainPage() {
     <div className="main-container">
       <div className="first-conteiner">
 
-      <Music/>
-
       <div className="bg-text-container">
         <div className="animate-text">
           <span>ESCRIME&nbsp;</span>
@@ -81,8 +80,8 @@ function MainPage() {
 
       <nav className="menu-nav">
 
-        <Link to="/LoginScreen" className="nav-button">Connexion</Link>
-        {loggedIn && <button className="nav-button" onClick={handleLogout}>Logout</button>}
+        <Link to="/LoginScreen" className="nav-button">CONNEXION</Link>
+        {loggedIn && <button className="nav-button" onClick={handleLogout}>DÉCONNEXION</button>}
       </nav>
  
           <div className="theme-present" style={{ fontFamily: 'Poppins, sans-serif' }}>
@@ -92,36 +91,51 @@ function MainPage() {
       
       </div>
 <SecondContainer/>
-      {/* <div className="second-conteiner">
-        <div className="big-letters">
-          <p> F F E </p>
-        </div>
-
-      <div className="three-fighters-photo">
-        </div>
-
-        <div className="text">
-          <p>La Fédération Française d'Escrime (FFE) gère et <br/> 
-          promeut l'escrime en France, organisant des <br/>
-          compétitions nationales et soutenant les escrimeurs <br/> 
-          dans les arènes internationales. Elle joue un rôle essentiel dans <br/> 
-          la formation des athlètes et des entraîneurs, contribuant à la<br/>
-           renommée mondiale de l'escrime française.
-         </p>
-        </div>
-      </div> */}
 
       <div className="third-container">
       </div>
 
+      <div className="four-part-container">
+      <div className="column">
+        <div className="text-4-part">
+          <p>La FFE organise des championnats pour <br/>
+          toutes les catégories d'âge et niveaux de<br/>
+          compétence. Elle sélectionne et prépare<br/>
+          les escrimeurs pour représenter la France<br/>
+          dans des compétitions internationales, y <br/>
+          compris les Championnats du Monde <br/>
+          d'Escrime et les Jeux Olympiques. 
+          </p>
+        </div>
+        <div className="photo">
+        <img src={firstPhoto} alt="First Photo" />
+        </div>
+      </div>
+      <div className="column">
+        <div className="photo">
+        <img src={secondPhoto} alt="Second Photo" />
+        </div>
+        <div className="text-4-part">
+          <p>La France brille de mille feux dans le <br/>
+          monde de l'escrime, particulièrement lors<br/>
+          des Jeux Olympiques. Avec un palmarès<br/>
+          impressionnant de 128 médailles, dont 43<br/>
+          en or, l'escrime se positionne comme le<br/>
+          sport le plus titré de l'Hexagone aux Jeux,<br/>
+          selon la Fédération Française d'escrime.
+          </p>
+        </div>
+      </div>
+      </div>
+
       <div className="fourth-container">   
-        <p> LE SPORT LE PLUS MEDAILLÉ DES JEUX <br/> OLYMPIQUES </p>
+        <p> L’ESCRIME À TRAVERS LES ÉPOQUES</p>
         <Video/>
       </div>
 
       <div className="fifth-container"> 
           <div className="distipl-text">
-              <p>3 disciplines </p>
+              <p>3 DISCIPLINES </p>
           </div>
               <div className="Caroussel">
               <SimpleCarousel images={images} />
@@ -130,7 +144,7 @@ function MainPage() {
 
       <div className="six-conteiner">
         <div className="français">
-          <p>Nos français aux JO </p>
+          <p>NOS FRANÇAIS AUX JO  </p>
         </div>
         <OpacityBox/>
       </div>
@@ -139,6 +153,29 @@ function MainPage() {
         <Display/>
     </div>
     
+    <div className="lastconteiner">
+    <div className="bigtext">
+          <p>Envie de pratiquer l’escrime ?  </p>
+        </div>
+        <p className="smalltext" style={{ fontStyle: 'italic' }}>  Trouver facilement un club près de chez vous ! </p>
+    </div>
+
+    <div className="lastbutton" style={{marginTop:"-2%"}}>
+      <input type="text" style={{width: "90vh", height: "5vh", borderRadius: "30px", marginRight: "20px", backgroundColor: "#D9D9D9", paddingLeft: "15px"}} 
+      placeholder="Renseignez votre ville..." />
+      <button style={{width: "30vh", height: "5vh", borderRadius: "30px", backgroundColor: "#D9D9D9"}}>TROUVER UN CLUB </button>
+    </div>
+
+    <footer>
+      <div className="horizontal-column">
+        <p>©ClaqClaq</p>
+        <p>Conditions générales</p>
+        <p>Charte de confidentalié</p>
+        <p>Politique des cookies</p>
+        <p>Charte de durabilité</p>
+      </div>
+    </footer>
+
 
     </div>
   );

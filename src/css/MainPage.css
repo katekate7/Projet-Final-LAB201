@@ -21,14 +21,16 @@ body {
     margin: 1% 2%;
     padding: 10px 20px;
     font-size: 16px;
-    background-color: #272727;
-    color: #fff;
+    font-family: 'Poppins', sans-serif; 
+    font-weight: bold; /* Corrected */
+    background-color: #D9D9D9;
+    color: black;
     border: none;
-    border-radius: 5px;
+    border-radius: 35px;
     cursor: pointer;
     transition: background-color 0.3s;
     text-decoration: underline;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;  
 }
 .nav-button {
     transition: all 0.3s ease-in-out; /* Add transition for smooth animation */
@@ -111,37 +113,40 @@ body {
     font-size: larger;
 }
 .third-container{
-    background-image: url('../photo/blackfight.jpg');
+    background-image: url('../photo/blackfight.png');
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 90vh;
     width: 100%;
     position: relative;
 }
 
 .fourth-container {
+  background-color: #1A1A1A;
+  height: 70vh;
+  width: 100%;
+  position: relative;
+  font-size: 6vh;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 550; /* Semi-bold */
+  text-align: center;
+  color: white;
+  margin: 0%;
+}
+.fifth-container{
     background-color: #1A1A1A;
     height: 100vh;
     width: 100%;
     position: relative;
-    font-size: 6vh;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 550; /* Semi-bold */
-    text-align: center;
-    color: white;
-}
-.fifth-container{
-    background-color: #1A1A1A;
-    height: 90vh;
-    width: 100%;
-    position: relative;
+    justify-content: center;
+    align-items: center;
+    
 }
 .distipl-text{
     font-size: 6vh;
     font-family: 'Poppins', sans-serif;
-    font-weight: 500; /* Semi-bold */
-    margin-left: 2%;
-    margin-top: 3%;
+    font-weight: 550; /* Semi-bold */
+    text-align: center;
     color: white;
 }
 .six-conteiner{
@@ -153,10 +158,8 @@ body {
 .français{
     font-size: 6vh;
     font-family: 'Poppins', sans-serif;
-    font-weight: 500; /* Semi-bold */
-    margin-left: 2%;
-    margin-top: 0%;
-    padding-top: 0%;
+    font-weight: 550; /* Semi-bold */
+    text-align: center;
     color: white;
 }
 .français p {
@@ -169,4 +172,212 @@ body {
     height: 45vh;
     width: 100%;
     position: relative;
+}
+.four-part-container {
+    display: flex;
+    background-color: #1A1A1A;
+    height: 80vh;
+    width: 100%;
+  }
+  
+  .column {
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .text-4-part {
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: white;
+    margin-left: -30%; /* To remove any default margins */
+    padding: 0%;
+    text-align: left;
+  }
+  
+  .photo {
+    text-align: center;
+  }
+  
+  .photo img {
+    max-width: 100%;
+    height: auto;
+  }
+  .line {
+    width: 50px; /* Adjust the width of the line */
+    height: 2px; /* Adjust the height of the line */
+    background-color: white; /* Adjust the color of the line */
+  }
+  .lastconteiner{
+    background-color: #1A1A1A;
+    height: 30vh;
+    width: 100%;
+  }
+  .bigtext{
+    font-size: 6vh;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 550; /* Semi-bold */
+    text-align: center;
+    color: white;
+    margin: 0%;
+    padding: 0%;
+  }
+  .smalltext{
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: white;
+    margin: -2%;
+    padding: 0%;
+  }
+  .lastbutton{
+    background-color: #1A1A1A;
+    height: 10vh;
+    width: 100%;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+  }
+/* Footer.css */
+
+.horizontal-column {
+    display: flex;
+    justify-content: space-around; /* Adjust alignment as needed */
+    height: 3vh;
+    width: 100%;
+    background-color: #1A1A1A;
+    margin-top: 10vh;
+  }
+  
+  .horizontal-column p {
+    margin: 0 12vh;/* Remove default margin for paragraphs */
+    font-size: 10px; /* Adjust font size as needed */
+    color: white;
+    text-decoration: underline;
+  }
+  
+  .Caroussel {
+    height: 20%;
+    width: 90%; /* Adjust as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12%;
+    margin-left: 3%;
+  }
+  .Caroussel .carousel-image {
+    width: 50%; /* Adjust as needed */
+    height: 100%; /* Adjust as needed */
+    display: block;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+
+  .Competition{
+    font-size: 6vh;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500; /* Semi-bold */
+    color: white;
+}
+.Form{
+    margin-left: 3%;
+    margin-top: 0%;
+    padding-top: 0%;
+    font-size: 3vh;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200; /* Semi-bold */
+    color: white;
+}
+.Edit{
+    padding: 10px 20px;
+    margin: 1%;
+    font-size: 16px;
+    background-color: #272727;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+.opacity-box-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 180vh;
+}
+
+.opacity-box {
+  position: relative;
+  width: 30%;
+  height: 100vh;
+  overflow: hidden; /* Ensure text doesn't overflow */
+}
+
+.opacity-box .image {
+  width: 100%;
+  height: auto;
+}
+
+.opacity-box .middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.opacity-box:hover .image {
+  opacity: 0.3;
+}
+
+.opacity-box:hover .middle {
+  opacity: 1;
+}
+
+.opacity-box .text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50vh;
+  background-color: rgba(0, 0, 0, 0.5); /* Transparent black background */
+  color: white;
+  font-size: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+}
+
+
+
+.second-container {
+  position: relative;
+}
+
+.second-container .big-letters {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.second-container .three-fighters-photo,
+.second-container .text {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
 }

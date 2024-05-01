@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { getDatabase, set, ref, onValue } from "firebase/database";
 import { auth } from "../firebaseConfig";
 import { saveTextToFirebase } from '../firebaseConfig';
-import '../css/Display.css';
+import '../css/MainPage.css';
 
 const Display = () => {
     const [savedData, setSavedData] = useState("");
